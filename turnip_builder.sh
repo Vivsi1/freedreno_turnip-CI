@@ -94,7 +94,7 @@ prepare_workdir(){
 
 		cd mesa
 		git fetch --depth=1 origin 3fdaad0948c035c23beca3410a5fef4be7561f97
-		git checkout FETCH_HEAD^
+		git checkout FETCH_HEAD
 		commit_short=$(git rev-parse --short HEAD)
 		commit=$(git rev-parse HEAD)
 		mesa_version=$(cat VERSION | xargs)
