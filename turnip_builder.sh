@@ -93,7 +93,7 @@ prepare_workdir(){
 		git clone --depth=1 "$mesasrc"
 
 		cd mesa
-		git fetch --depth=1 origin 9af11bf306c4b67c434044a7ba2907a5c6df5542
+		git fetch --depth=1 origin 92370f63ab4a9bd42865a1875bb4fcd34a51e23b
 		git checkout FETCH_HEAD
 		commit_short=$(git rev-parse --short HEAD)
 		commit=$(git rev-parse HEAD)
